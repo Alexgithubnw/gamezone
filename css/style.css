@@ -1,0 +1,428 @@
+@import url(./cdn.css);
+@import url(./header.css);
+@import url(./club.css);
+@import url(./swiper.css);
+@import url(./price.css);
+@import url(./specifications.css);
+@import url(./games.css);
+@import url(./contacts.css);
+@import url(./modal.css);
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  background: url(../img/fonovoe.jpeg); /* Путь к картинке */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Закрепляем изображение */
+}
+
+.conteiner {
+  width: 90%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: Clickuper;
+  src: url("../Clickuper.ttf");
+}
+/* 2a3e90 синий цвет
+f4009b розовый*/
+@media (max-width: 2560px) {
+  .navigation-list__item a {
+    font-size: 30px;
+  }
+  .header-numder {
+    font-size: 36px;
+  }
+  .price-panel {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1750px) {
+  .navigation-list__item a {
+    font-size: 24px;
+  }
+  .header-numder {
+    font-size: 30px;
+  }
+  .price-panel {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1440px) {
+  .navigation-list__item a {
+    font-size: 20px;
+  }
+  .header-numder {
+    font-size: 20px;
+  }
+  .price-panel {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1200px) {
+  .logo {
+    width: 80px;
+  }
+  .navigation-list__item a {
+    font-size: 16px;
+  }
+  .header-numder {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .club-button {
+    font-size: 30px;
+  }
+  .club-text {
+    font-size: 26px;
+  }
+  .price-panel {
+    font-size: 20px;
+  }
+  .price-tabl-title {
+    font-size: 20px;
+  }
+  .price-tabl-text {
+    font-size: 20px;
+  }
+  .specifications-text__title {
+    font-size: 26px;
+  }
+  .specifications-text__info {
+    font-size: 20px;
+  }
+  .games-name {
+    font-size: 20px;
+  }
+  .contacts-title {
+    font-size: 26px;
+  }
+  .contacts-text {
+    font-size: 24px;
+  }
+  .modal-title {
+    font-size: 30px;
+  }
+  .modal-text {
+    font-size: 24px;
+  }
+  .modal-input {
+    font-size: 24px;
+  }
+  .modal-button {
+    font-size: 24px;
+  }
+  .modal-bid {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1036px) {
+  .logo {
+    width: 60px;
+  }
+  .navigation-list__item a {
+    font-size: 14px;
+  }
+  .header-numder {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .club-button {
+    font-size: 22px;
+  }
+  .club-text {
+    font-size: 20px;
+  }
+  .price-panel {
+    font-size: 18px;
+  }
+  .price-tabl-title {
+    font-size: 18px;
+  }
+  .price-tabl-text {
+    font-size: 18px;
+  }
+  .specifications-text__title {
+    font-size: 20px;
+  }
+  .specifications-text__info {
+    font-size: 18px;
+  }
+  .games-card {
+    width: 33%;
+  }
+  .games-card:last-child {
+    display: block;
+  }
+  .games-name {
+    font-size: 16px;
+  }
+  .contacts-title {
+    font-size: 26px;
+  }
+  .contacts-text {
+    font-size: 20px;
+  }
+  .modal {
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .logo {
+    width: 50px;
+  }
+  .navigation-list__item a {
+    font-size: 11px;
+  }
+  .header-numder {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .club-button {
+    font-size: 22px;
+  }
+  .club-text {
+    font-size: 20px;
+  }
+  .price-panel {
+    font-size: 16px;
+  }
+  .price-tabl-title {
+    font-size: 16px;
+  }
+  .price-tabl-text {
+    font-size: 16px;
+  }
+  .specifications-text__title {
+    font-size: 20px;
+  }
+  .specifications-text__info {
+    font-size: 16px;
+  }
+  .games-card {
+    width: 33%;
+  }
+  .games-card:last-child {
+    display: block;
+  }
+  .games-name {
+    font-size: 16px;
+  }
+  .contacts-title {
+    font-size: 26px;
+  }
+  .contacts-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 780px) {
+  .conteiner {
+    width: 100%;
+  }
+  .club {
+    padding: 120px 0px 0px 0px;
+  }
+  svg {
+    height: 50%;
+  }
+  .navigation-list {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .club-img h1 {
+    font-size: 40px;
+  }
+  .header-numder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .club-button {
+    width: 50%;
+  }
+  .club-text {
+    font-size: 18px;
+  }
+  .specifications-tabl {
+    margin: auto;
+    flex-direction: column;
+    width: 80%;
+  }
+  .specifications-info {
+    width: 100%;
+  }
+  .specifications-text__title {
+    font-size: 30px;
+  }
+  .specifications-text__info {
+    font-size: 24px;
+  }
+  .games-card {
+    width: 50%;
+  }
+  .games-name {
+    font-size: 20px;
+  }
+  .games-card:last-child {
+    display: none;
+  }
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+  .contacts-address {
+    width: 100%;
+  }
+  .contacts-title {
+    font-size: 30px;
+  }
+  .contacts-text {
+    font-size: 24px;
+  }
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next::after {
+    display: none;
+  }
+  .swiper-pagination {
+    margin-bottom: 20px;
+  }
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .modal-text {
+    font-size: 18px;
+  }
+  .modal-input {
+    font-size: 18px;
+    width: 50%;
+    border: 3px solid #2a3e90;
+  }
+  .modal-button {
+    font-size: 18px;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  .modal-bid {
+    font-size: 16px;
+  }
+  .modal-info {
+    margin-bottom: 30px;
+  }
+  .modal-info:last-child {
+    margin-bottom: 40px;
+  }
+  .navigation-list__item__burger a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .header-numder {
+    font-size: 18px;
+  }
+  .logo {
+    width: 60px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .club-img h1 {
+    font-size: 26px;
+  }
+  .club-button {
+    width: 60%;
+  }
+  .club-text {
+    font-size: 16px;
+  }
+  .price-panel {
+    font-size: 8px;
+    margin-bottom: 20px;
+  }
+  .price-tabl-title {
+    font-size: 12px;
+    padding: 10px 0px;
+  }
+  .price-tabl-text {
+    font-size: 12px;
+    padding: 10px 0px;
+  }
+  .specifications-info {
+    margin-bottom: 20px;
+  }
+  .specifications-text__title {
+    font-size: 24px;
+  }
+  .specifications-text__info {
+    font-size: 18px;
+  }
+  .modal-title {
+    font-size: 18px;
+  }
+  .modal-text {
+    font-size: 14px;
+  }
+  .modal-input {
+    font-size: 14px;
+    width: 60%;
+  }
+  .modal-button {
+    font-size: 14px;
+    width: 60%;
+    border: 3px solid #2a3e90;
+  }
+  .modal-bid {
+    font-size: 12px;
+  }
+  .burger {
+    width: 50%;
+  }
+}
+@media (max-width: 460px) {
+  .club-button {
+    font-size: 18px;
+  }
+  .modal-button {
+    font-size: 12px;
+    width: 70%;
+    padding: 10px 0px;
+  }
+  .modal-title {
+    font-size: 16px;
+  }
+  .modal-text {
+    font-size: 10px;
+  }
+  .modal-input {
+    font-size: 10px;
+    width: 70%;
+  }
+  .navigation-list__item__burger a {
+    font-size: 12px;
+  }
+}

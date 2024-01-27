@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+svg {
+  margin-top: 100px;
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #4d163d;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #bd0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+.start-indentation {
+  margin-bottom: 100px;
+}
+.conteiner-start {
+  position: relative;
+  z-index: 3;
+  height: 75vh;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+}
+.start::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.club {
+  margin: auto;
+  padding: 120px 0px 50px 0px;
+}
+
+.club-button {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  width: 40%;
+  padding: 20px 40px;
+  text-align: center;
+  font-family: "Clickuper";
+  color: #fff;
+  font-weight: 600;
+  font-size: 40px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  background-color: rgba(77, 22, 61, 0.8);
+  text-transform: uppercase;
+  animation: neon 2s ease-in-out infinite;
+}
+.club-button:hover {
+  color: rgba(77, 22, 61, 0.8);
+  border: 2px solid rgba(167, 112, 9, 0.8);
+  background-color: rgba(253, 183, 49, 0.8);
+}
+.title {
+  text-align: left;
+  font-size: 60px;
+  color: #bd0034;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 900;
+  font-style: italic;
+  position: relative;
+}
+
+.title-club::after {
+  content: "Gamezone";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  color: rgba(189, 0, 52, 0.5);
+}
+.club-text {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  font-size: 32px;
+  color: #bd0034;
+  margin-bottom: 50px;
+  background-color: rgba(51, 2, 83, 0.8);
+  border-radius: 25px;
+}
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 25px #741481, inset 0 0 #741481;
+  }
+  20% {
+    box-shadow: 0 0 25px #9a35ed, inset 0 0 #9a35ed;
+  }
+  40% {
+    box-shadow: 0 0 25px #741481, inset 0 0 #741481;
+  }
+  50% {
+    box-shadow: 0 0 25px #9a35ed, inset 0 0 #9a35ed;
+  }
+  55% {
+    box-shadow: 0 0 40px #741481, inset 0 0 #741481;
+  }
+  60% {
+    box-shadow: 0 0 40px #9a35ed, inset 0 0 #9a35ed;
+  }
+  61% {
+    box-shadow: 0 0 40px #741481, inset 0 0 #741481;
+  }
+  63% {
+    box-shadow: 0 0 40px #9a35ed, inset 0 0 #9a35ed;
+  }
+  65% {
+    box-shadow: 0 0 40px #741481, inset 0 0 #741481;
+  }
+  70% {
+    box-shadow: 0 0 40px #9a35ed, inset 0 0 #9a35ed;
+  }
+  to {
+    box-shadow: 0 0 25px #741481, inset 0 0 #741481;
+  }
+}

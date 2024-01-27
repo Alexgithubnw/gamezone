@@ -1,0 +1,204 @@
+.modal-overlay {
+  position: fixed;
+  z-index: 1112;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal {
+  padding: 40px;
+  width: 50%;
+  z-index: 1;
+  background-color: rgb(51, 2, 83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  padding: 20px;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+  display: block;
+}
+.burger-overlay {
+  position: fixed;
+  z-index: 1111;
+  right: 0;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+
+  justify-content: right;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.burger {
+  padding: 40px;
+  width: 40%;
+  z-index: 1;
+  background-color: rgba(77, 22, 61, 1);
+  display: flex;
+
+  justify-content: center;
+  display: none;
+  padding: 20px;
+}
+
+.burger-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger--visible {
+  display: block;
+}
+
+.navigation-list-burger {
+  padding: 100px 10px 0px 10px;
+}
+.navigation-burger {
+  height: 85%;
+}
+.navigation-list__item__burger {
+  margin-bottom: 30px;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 600;
+  animation: neon 2s ease-in-out infinite;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.navigation-list__item__burger a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+}
+.contacts-social-burger {
+  justify-content: center;
+}
+.modal-wrapper-info {
+  display: flex;
+  flex-direction: column;
+}
+.modal-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.modal-text {
+  width: 20%;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 600;
+  font-style: italic;
+  color: #bd0034;
+}
+.modal-title {
+  font-size: 42px;
+  color: #bd0034;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.modal-input {
+  width: 50%;
+  font-size: 26px;
+  border: 5px solid #2a3e90;
+  border-radius: 10px;
+  text-align: left;
+}
+.modal-input:focus {
+  box-shadow: 0 0 15px #2a3e90;
+}
+.modal-button {
+  width: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgba(77, 22, 61, 0.8);
+  text-align: center;
+  margin: auto;
+  padding: 20px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.modal-button:hover {
+  color: rgba(77, 22, 61, 0.8);
+  border: 2px solid rgba(167, 112, 9, 0.8);
+  background-color: rgba(253, 183, 49, 0.8);
+}
+.modal-bid {
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 600;
+  font-style: italic;
+  color: #bd0034;
+  font-size: 22px;
+  text-align: center;
+}
+.modal-bid a {
+  color: #fdb731;
+}
+.fa-xmark {
+  display: block;
+  text-align: right;
+  color: #bd0034;
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.modal-response {
+  display: none;
+}
+
+.modal-response--visible {
+  display: block;
+  background-color: #00f414;
+  border: 5px solid #069912;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: "Clickuper";
+  font-weight: 600;
+  color: #069912;
+  font-size: 16px;
+  text-align: center;
+}
